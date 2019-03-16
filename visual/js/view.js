@@ -289,8 +289,7 @@ var View = {
     showStats: function(opts) {
         var texts = [
             'length: ' + Math.round(opts.pathLength * 100) / 100,
-            'Metragem: ' + Math.round(opts.pathLength * 0.60) + 6,
-            'time: ' + opts.timeSpent + 'ms',
+            'metragem: ' + Math.round(opts.pathLength * 0.60) + 6,            
             'operations: ' + opts.operationCount
         ];
         $('#stats').show().html(texts.join('<br>'));
